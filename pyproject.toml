@@ -1,0 +1,13 @@
+[project]
+name = "whisper-cli"
+version = "0.1.0"
+description = "Local Whisper CLI tool (offline speech-to-text)"
+authors = [{ name = "arkarchanmyae" }]
+dependencies = [
+    "faster-whisper",
+    "tqdm"
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+whisper-cli = "whisper_cli.cli:main"
